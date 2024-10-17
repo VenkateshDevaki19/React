@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React App</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script type="text/babel">
+    // Your React code here
+    function MenuItems(props) {
+      const item = props.item;
+      return <li>{item}</li>;
+    }
+
+    function NavMenu(props) {
+      const list = props.menuitems;
+      const updatedList = list.map((listItems) => {
+        return <MenuItems key={listItems.toString()} item={listItems} />;
+      });
+      return <ul>{updatedList}</ul>;
+    }
+
+    const menuItem1 = [1, 2, 3, 4, 5];
+    const menuItem2 = [1, 2, 3, 4, 5, 6];
+
+    ReactDOM.render(
+      <div>
+        <NavMenu menuitems={menuItem1} />
+        <NavMenu menuitems={menuItem2} />
+      </div>,
+      document.getElementById("root")
+    );
+  </script>
+</body>
+</html>
