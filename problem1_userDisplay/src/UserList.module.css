@@ -1,0 +1,12 @@
+.userList {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
