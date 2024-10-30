@@ -1,0 +1,33 @@
+.coffee_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 800px;
+    height: 400px;
+    /* background-color: black;
+    color: white; */
+    margin-top: 20px;
+}
+
+.imageDiv{
+    gap:20px
+}
+
+.imageDiv img{
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    gap:10px
+}
+
+.detailsDiv{
+    background-color: #f2e9e4;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.detailsDiv li{
+    list-style-type: none;
+    padding-left: 50px;
+}
