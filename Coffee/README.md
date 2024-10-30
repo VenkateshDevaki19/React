@@ -1,8 +1,14 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Coffee app fetches the coffee data from db.json with the help of async and await, then loads it on the web page.
 
-Currently, two official plugins are available:
+Hooks used in this project 
+1. useState()
+2. useEffect()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+functionality: - 
+1. The page loads with the page title and Get Coffee Button on the web page.
+2. After clicking on the Get Coffee button the coffee data will display on the web page.
+
+Start the JSON server to serve the data:
+json-server --watch db.json --port 8080
