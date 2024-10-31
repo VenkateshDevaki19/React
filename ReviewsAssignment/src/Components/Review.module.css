@@ -1,0 +1,83 @@
+/* .main_container {
+  width: 1920px;
+  height: 1081px;
+  margin-top: 541px;
+  margin-left: 672px;
+  padding: 322px 660px 322px 660px;
+  gap: 0px;
+  background-color: #f8fafc;
+} */
+
+.review_container {
+  width: 600px;
+  height: 437px;
+  margin-top: 322px;
+  margin-left: 660px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.06);
+  /* background-color: black; */
+}
+
+.image_container {
+  width: 150px;
+  height: 150px;
+  margin-top: 24px;
+  margin-left: 225px;
+  /* border-radius: 75px; */
+  border: 3px solid purple;
+  gap: 0px;
+  object-fit: cover;
+}
+
+.image_container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  gap: 0px;
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+.userName{
+    width: 154.42px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 222.89px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 25px;
+    line-height: 25.01px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgba(15, 23, 42, 1);
+}
+
+.role{
+    width: 114px;
+    height: 13px;
+    margin-top: 40px;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #ffffff;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
