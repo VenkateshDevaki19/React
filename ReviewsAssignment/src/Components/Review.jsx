@@ -1,30 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Review.module.css";
 
-const Review = () => {
+const Review = ({id, name, job, text, image, onPrev, onNext}) => {
   return (
     <div className={styles.main_container}>
       <div className={styles.review_container}>
         <div className={styles.image_container}>
           <img
-            src="https://s3-alpha-sig.figma.com/img/e438/3d6d/4399ed7db374fc7598b07df58b1d6602?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MJNxCcgVIzRqgozaES-fEoeZLNZP9wNRlpu01C51yXDuUbtG3~iF2qsiZ9jJQ-AkR8jJK~8M-fqyeKIpKaD5phBbyJX-RE27aRAfk0xFaZjQJwsHErStY0q7530Fk8~p4PvasavHe9F~oBz5jtbX2aFkSvilqK5Q7bmwVfqTzYF~TZYh8FkuRU2ouLr5vfCdxMEGwdTUyNOViKvqkU-QLI-XSEwDz9L1AJQKmB4ypCeeyv3dRYdL~WpBgdIla24r3My~ls2rqVEwNEF2KNF0GpergF3jliBnjVTYytI9fcAGO8eL~~jIsg36WwRlv5X07YNLblTXuKoseXSvrjljcg__"
+            src={image}
             alt="profile_image"
           />
         </div>
 
-        <h2 className={styles.userName}>Susan smith</h2>
-        <p className={styles.role}>web developer</p>
+        <h2 className={styles.userName}>{name}</h2>
+        <p className={styles.role}>{job}</p>
 
-        <div className="info_container">
+        <div className={styles.info_container}>
           <p>
-            I'm baby meggings twee health goth +1. Bicycle rights tumeric
-            chartreuse before they sold out chambray pop-up. Shaman humblebrag
-            pickled coloring book salvia hoodie, cold-pressed four dollar toast
-            everyday carry
+            {text}
           </p>
         </div>
         <div className="button_container">
-          <button>
+          <button className={styles.leftSide_button} onClick={onPrev}>  
             <svg
               width="12"
               height="18"
@@ -39,30 +36,23 @@ const Review = () => {
             </svg>
           </button>
 
-          <button>
+          <button className={styles.rightSide_button} onClick={onNext}>
             <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
+              width="12"
+              height="18"
+              viewBox="0 0 12 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_4_11)">
-                <path
-                  d="M14.9014 10.6629L7.30985 18.2545C6.94371 18.6206 6.35012 18.6206 5.98403 18.2545L5.0986 17.369C4.73309 17.0035 4.73238 16.4111 5.09703 16.0448L11.1135 10L5.09703 3.95527C4.73238 3.58891 4.73309 2.99652 5.0986 2.63101L5.98403 1.74559C6.35016 1.37945 6.94375 1.37945 7.30985 1.74559L14.9014 9.33711C15.2675 9.7032 15.2675 10.2968 14.9014 10.6629Z"
-                  fill="#3C3799"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_4_11">
-                  <rect width="20" height="20" fill="white" />
-                </clipPath>
-              </defs>
+              <path
+                d="M10.9014 9.66293L3.30985 17.2545C2.94371 17.6206 2.35012 17.6206 1.98403 17.2545L1.0986 16.369C0.733088 16.0035 0.732385 15.4111 1.09703 15.0448L7.11348 9L1.09703 2.95527C0.732385 2.58891 0.733088 1.99652 1.0986 1.63101L1.98403 0.745585C2.35016 0.379452 2.94375 0.379452 3.30985 0.745585L10.9014 8.33711C11.2675 8.7032 11.2675 9.2968 10.9014 9.66293Z"
+                fill="#3C3799"
+              />
             </svg>
           </button>
         </div>
 
-        <button>Surprise Me</button>
+        <button className={styles.surprise_button}>Surprise Me</button>
       </div>
     </div>
   );
