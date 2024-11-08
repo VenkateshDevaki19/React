@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+  max-width: 1120px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* button Container */
+.btnContainer {
+  flex: 1 1 200px;
+  max-width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  /* background-color: black; */
+  box-sizing: border-box;
+}
+
+.btnContainer button {
+  border: none;
+  align-items: center;
+  width: 199px;
+  height: 38px;
+  background-color: rgba(230, 223, 223, 0);
+}
+
+.btnContainer button p {
+  width: 53px;
+  height: 15px;
+  margin-left: 74.17px;
+  margin-right: 73.19px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.btnContainer button:hover {
+  color: rgba(20, 184, 166, 1);
+  box-shadow: -2px 0px 0px 0px rgba(20, 184, 166, 1);
+}
+.btnContainer button:active {
+  color: rgba(20, 184, 166, 1);
+  box-shadow: -2px 0px 0px 0px rgba(20, 184, 166, 1);
+}
+
+/* Job Container */
+
+.jobContainer {
+  flex: 1 1 600px;
+  width: 856px;
+  height: auto;
+  margin-left: 64px;
+  box-sizing: border-box;
+}
+
+.jobTitle {
+  margin: 0;
+  /* border: 1px solid black; */
+  width: 382px;
+  height: 32px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgba(15, 23, 42, 1);
+}
+
+span {
+  margin-top: 12px;
+  width: 83.27px;
+  height: 28px;
+  /* border: 1px solid lightskyblue; */
+  border-radius: 4px;
+  padding: 6px 13.27px 6px 12px;
+  text-align: center;
+  background-color: rgba(203, 213, 225, 1);
+  width: 58px;
+  height: 16px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(51, 65, 85, 1);
+}
+
+.dateContent {
+  width: 202px;
+  height: 16px;
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: rgba(100, 116, 139, 1);
+}
+
+/* duty Container css */
+
+.dutyContainer {
+  width: 856px;
+  height: 184px;
+  /* border: 1px solid black; */
+  margin-top: 32px;
+}
+
+.adjustContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 856px;
+  height: 48px;
+  /* border: 1px solid rgb(20, 32, 198); */
+}
+
+.textContainer {
+  width: 808px;
+  height: 48px;
+  margin-left: 32px;
+  /* border: 1px solid green; */
+}
+
+.reactIconColor {
+  color: rgba(20, 184, 166, 1);
+  width: 12.46px;
+  height: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnContainer,
+  .jobContainer {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .dutyContainer,
+  .adjustContainer,
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .jobTitle {
+    font-size: 24px; /* Smaller font for mobile */
+  }
+}
