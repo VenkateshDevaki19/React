@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 const Form = () => {
+
+  const [formData, setFormData] = useState({
+    firstName:"",
+    lastName:"",
+    email:"",
+    password:"",
+    phoneNumber:"",
+    country:"",
+    avatar:"",
+    birthDate:"",
+    marriageStatus: false,
+    gender:"",
+  });
+
+
+  const [showData, setShowData] = useState(false);
+
+  const avatarRef = useRef(null);
+
+  const handleChange = (e) => {
+    const {name, type, value, checked} = e.target;
+
+    setFormData({
+      ...formData, [name]: type === "checkbox" ? checked:value,
+    });
+  }; 
+
   return (
     <div>
       <form action="post">
@@ -71,7 +98,15 @@ const Form = () => {
               <input type="radio" name="gender" value="Other" />Other
             </label>
           </div>
+
+          <button type="submit">Submit</button>
       </form>
+
+      {showdata ?(
+        <showFormData formData={formdata} /> 
+      ): (
+        <p>Please fill out the form and submit</p>
+      )}
     </div>
   );
 };
