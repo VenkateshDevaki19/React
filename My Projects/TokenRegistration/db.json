@@ -1,0 +1,30 @@
+{
+  "incidents": [
+    {
+      "id": "d51f",
+      "incident": "Incident1",
+      "incidentType": "Technical",
+      "email": "venkatesh@gmail.com",
+      "phoneNumber": "9999999999",
+      "status": "Pending",
+      "token": 3555
+    },
+    {
+      "id": "d185",
+      "incident": "Incident 2",
+      "incidentType": "AppLogin",
+      "email": "manoj@gmail.com",
+      "phoneNumber": "9898989898",
+      "status": "Pending",
+      "token": 6523
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin1234",
+      "role": "admin"
+    }
+  ]
+}

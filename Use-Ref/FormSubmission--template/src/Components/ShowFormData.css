@@ -1,0 +1,15 @@
+.data-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin: 5px 0;
+  }
+  
